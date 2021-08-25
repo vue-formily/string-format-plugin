@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="#" target="_blank">
+  <a href="https://vue-formily.netlify.app/plugins/string-format" target="_blank">
     <img width="320" src="./.github/logo.png">
   </a>
 </p>
 <br>
 
-Simple string format plugin for **vue-formily**. Can be used as a standalone library to format string. 
+Simple string format plugin for [**vue-formily**](https://vue-formily.netlify.app). Can be used as a standalone library to format string. 
 
 ## Links
 - [📚 &nbsp; Documentation](https://vue-formily.netlify.app/plugins/string-format)
@@ -74,8 +74,8 @@ For a deeper understanding, please check the [formatting example](https://vue-fo
 
 ## Contributing
 
-You are welcome to contribute to this project.
+You are welcome to contribute to this project, but before you do, please make sure you read the [Contributing Guide](https://github.com/vue-formily/formily/blob/main/.github/CONTRIBUTING.md).
 
 ## License
 
-[MIT](https://github.com/haan123/vue-formily/util/blob/main/LICENSE)
+[MIT](https://github.com/vue-formily/string-format-plugin/blob/main/LICENSE)
