@@ -5,15 +5,30 @@
 </p>
 <br>
 
-Simple string format plugin for [**vue-formily**](https://vue-formily.netlify.app). Can be used as a standalone library to format string. 
+Simple string format plugin for [**vue-formily**](https://vue-formily.netlify.app).
 
 ## Links
 - [📚 &nbsp; Documentation](https://vue-formily.netlify.app/plugins/string-format)
 
-## Getting Started
+## Installation
+### CDN
+You can use **string-format** plugin with a script tag and a CDN, import the library like this:
 
-### Installation
+```html
+<script src="https://unpkg.com/@vue-formily/string-format@latest"></script>
+```
 
+This will inject a `StringFormatPlugin` global object, which you will use to access the various methods exposed by the plugin or register to [**vue-formily**](https://vue-formily.netlify.app).
+
+If you are using native ES Modules, there is also an ES Modules compatible build:
+
+```html
+<script type="module">
+  import stringFormat from 'https://unpkg.com/@vue-formily/string-format@latest/dist/string-format-plugin.esm.js'
+</script>
+```
+
+### NPM
 ```sh
 # install with yarn
 yarn add @vue-formily/string-format
@@ -55,7 +70,7 @@ stringFormat.format('Welcome, {user.name}!', {
 ```
 
 ### In Vue Formily's [Field](https://vue-formily.netlify.app/api/field)
-To **format string** in Vue Formily's Field, we need to [plug](https://vue-formily.netlify.app/api/helpers#plug) a plugin with `string-format` name first. After that, we can use the `format` option in the [FieldSchema](https://vue-formily.netlify.app/api/field#constructor). Note that the **schema's type** has to be `string`.
+After installing **String Format Plugin**, we can use the `format` option in the [FieldSchema](https://vue-formily.netlify.app/api/field#constructor). Note that the **schema's type** has to be `string`.
 
 ```typescript
 // Sample schema
@@ -78,4 +93,4 @@ You are welcome to contribute to this project, but before you do, please make su
 
 ## License
 
-[MIT](https://github.com/vue-formily/string-format-plugin/blob/main/LICENSE)
+[MIT](./LICENSE)
