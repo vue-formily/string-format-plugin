@@ -14,8 +14,10 @@ function formatString(format: string, data?: Data | Data[]) {
 export default {
   name: 'string-format',
   format: formatString,
-  install() {
-    return this;
+  install(Objeto: any, options = {}) {
+    this.options = { ...this.options, ...options };
+
+    Objeto.prototype.$stringFormat = this;
   },
   options: {}
 };
