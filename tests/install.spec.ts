@@ -2,7 +2,7 @@ import { createLocalVue, mount } from '@vue/test-utils';
 import VueFormily from '@vue-formily/formily';
 import stringFormat from '@/.';
 
-describe('installation', () => {
+describe('Installation', () => {
   let localVue: any;
 
   beforeEach(() => {
