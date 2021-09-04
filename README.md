@@ -11,6 +11,15 @@ Simple string format plugin for [**vue-formily**](https://vue-formily.netlify.ap
 - [📚 &nbsp; Documentation](https://vue-formily.netlify.app/plugins/string-format)
 
 ## Installation
+### NPM
+```sh
+# install with yarn
+yarn add @vue-formily/string-format
+
+# install with npm
+npm install @vue-formily/string-format --save
+```
+
 ### CDN
 You can use **string-format** plugin with a script tag and a CDN, import the library like this:
 
@@ -28,15 +37,6 @@ If you are using native ES Modules, there is also an ES Modules compatible build
 </script>
 ```
 
-### NPM
-```sh
-# install with yarn
-yarn add @vue-formily/string-format
-
-# install with npm
-npm install @vue-formily/string-format --save
-```
-
 ### Set Up
 
 ```typescript
@@ -44,9 +44,14 @@ import Vue from 'vue';
 import VueFormily from '@vue-formily/formily';
 import stringFormat from '@vue-formily/string-format';
 
+// Use this
 Vue.use(VueFormily, {
   plugins: [stringFormat]
 });
+
+// Or this
+VueFormily.plug(stringFormat);
+Vue.use(VueFormily);
 ```
 
 ## Basic Usage
