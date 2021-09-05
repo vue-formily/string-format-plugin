@@ -44,12 +44,6 @@ import Vue from 'vue';
 import VueFormily from '@vue-formily/formily';
 import stringFormat from '@vue-formily/string-format';
 
-// Use this
-Vue.use(VueFormily, {
-  plugins: [stringFormat]
-});
-
-// Or this
 VueFormily.plug(stringFormat);
 Vue.use(VueFormily);
 ```
