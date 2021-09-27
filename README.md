@@ -38,14 +38,32 @@ If you are using native ES Modules, there is also an ES Modules compatible build
 ```
 
 ### Set Up
-
+### Vue 3.x
 ```typescript
-import Vue from 'vue';
-import VueFormily from '@vue-formily/formily';
+import { createApp } from 'vue'
+import { createFormily } from '@vue-formily/formily';
 import stringFormat from '@vue-formily/string-format';
 
-VueFormily.plug(stringFormat);
-Vue.use(VueFormily);
+const formily = createFormily();
+
+formily.plug(stringFormat);
+
+const app = createApp(App)
+
+app.use(formily);
+```
+
+### Vue 2.x
+```typescript
+import Vue from 'vue';
+import { createFormily } from '@vue-formily/formily';
+import stringFormat from '@vue-formily/string-format';
+
+const formily = createFormily();
+
+formily.plug(stringFormat);
+
+Vue.use(formily);
 ```
 
 ## Basic Usage

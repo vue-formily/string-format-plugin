@@ -1,5 +1,5 @@
 import { createLocalVue, mount } from '@vue/test-utils';
-import VueFormily from '@vue-formily/formily';
+import { createFormily } from '@vue-formily/formily';
 import stringFormat from '@/.';
 
 describe('Installation', () => {
@@ -10,9 +10,11 @@ describe('Installation', () => {
   });
 
   it('Should install by vue-formily `plug` method successfully', async () => {
-    VueFormily.plug(stringFormat);
+    const formily = createFormily();
 
-    localVue.use(VueFormily);
+    formily.plug(stringFormat);
+
+    localVue.use(formily);
 
     const wrapper = mount(
       {
