@@ -1,6 +1,6 @@
 {
   "name": "@vue-formily/string-format",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Simple string format plugin for vue-formily.",
   "author": "An Ha",
   "license": "MIT",
